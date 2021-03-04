@@ -1,0 +1,40 @@
+.search{
+    position: relative;
+    border-radius: 999px;
+    background-color: #EEEEEE;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: auto;
+
+}
+
+.search:hover{
+    border: 1px solid #EEEEEE;
+}
+
+
+.searchIcon{
+    padding: 0 8px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inputInput{
+    background-color: transparent;
+    color: inherit;
+    padding: 4px 4px 4px 0;
+    padding-left: calc(1em + 10px);
+    width: 100%;
+}
+
+
+.inputInput:focus{
+    outline: none;
+    background-color: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 999px;
+}
