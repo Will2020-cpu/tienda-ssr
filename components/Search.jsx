@@ -11,7 +11,9 @@ const Search = () => {
                 <div className={styles.searchIcon}>
                     <FontAwesomeIcon icon={faSearch} className="text-gray-400 hover:text-gray-500" />
                 </div>
-                <input type="text" placeholder="Busca el accesorio" className={styles.inputInput} />
+                <div className="nav">
+                    <input type="text" placeholder="Busca el accesorio" className={styles.inputInput} />
+                </div>
             </div>
         </>
     )
