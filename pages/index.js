@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
 import Search from '../components/Search'
 import { motion } from 'framer-motion'
-import SectionBusqueda from '../components/SectionBusqueda'
+import Card from '../components/Card'
 
 
 
@@ -54,9 +54,11 @@ export default function Home() {
             <Search />
           </motion.div>
         </div>
-        <motion.div variants={fadeInUp} className="my-10 mx-auto w-9/12">
-          <SectionBusqueda/>
+        
+        <motion.div variants={fadeInUp}>
+          <Card/>
         </motion.div>
+
       </motion.div>
     </>
   )

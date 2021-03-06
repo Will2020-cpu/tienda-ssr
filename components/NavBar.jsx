@@ -3,10 +3,31 @@ import Link from 'next/link'
 import styles from '../styles/navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import SectionBusqueda from './SectionBusqueda'
+import { motion } from 'framer-motion'
 
 
 const NavBar = () => {
     const [focus,setFocus] = useState(false)
+    const easing = [0.6, -0.05, 0.01, 0.99]
+
+
+    const fadeInUp ={
+    initial:{
+        y:60,
+        opacity:0,
+
+        },
+        animate:{
+        y:0,
+        opacity:1,
+            transition:{
+                duration:0.6,
+                ease: easing
+            }
+        }
+    }
+
     return (
         <>
             <div className="bg-white py-1 shadow-lg">
@@ -54,6 +75,11 @@ const NavBar = () => {
                     </nav>
                 </div>
             </div>
+            {focus ? (
+                <motion.div exit={{opacity:0}} className={styles.busqueda}>
+                    <SectionBusqueda/>
+                </motion.div>
+            ) : (null)}  
         </>
     )
 }

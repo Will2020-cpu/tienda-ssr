@@ -7,7 +7,7 @@ const Card = () => {
         <>
            <div className="">
                 <div className="">
-                    
+                        
                 </div>
            </div>
         </>

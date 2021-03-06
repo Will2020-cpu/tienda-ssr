@@ -59,3 +59,10 @@
     box-decoration-break:clone;
 }
 
+.busqueda {
+    margin: 5px 0;
+    position: absolute;
+    top: 55px;
+    left: 14%;
+    z-index: 999;
+}
